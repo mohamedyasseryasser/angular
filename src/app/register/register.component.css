@@ -1,0 +1,36 @@
+.register{
+    position: relative;
+    top: 80px;
+    margin: 40px auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 60%;
+    padding: 20px;
+  }
+   .registhead{
+    margin-top: -40px;
+    margin-bottom: 20px;
+   }
+  h2{
+    background-color: red;
+    width: 300px;
+    border-radius: 30px;
+    display: inline-block;
+  }
+ .mat-radio-group{
+ display: flex;
+ justify-content: end;
+ }
+mat-radio-button{
+    margin-left: 90px;
+}
+mat-form-field{
+width: 100%;
+}
+.registerfoot{
+    display: flex;
+    justify-content: space-between;
+}  
+.primary{
+    text-decoration: none;
+}

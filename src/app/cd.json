@@ -1,0 +1,125 @@
+{
+  "students": [
+    {
+      "name": "wqe",
+      "email": "ali@dsaa",
+      "password": "444",
+      "id": 1,
+      "subjects": [
+        {
+          "subjectname": "dsa",
+          "id": "1",
+          "degree": 0
+        }
+      ]
+    },
+    {
+      "name": "eqwesda",
+      "email": "ali@dsaasd",
+      "password": "1234",
+      "id": 2,
+      "subjects": [
+        {
+          "subjectname": "dsa",
+          "id": "1",
+          "degree": 0
+        }
+      ]
+    },
+    {
+      "name": "eqwesda",
+      "email": "ali@dsaasd",
+      "password": "1234",
+      "id": 3
+    },
+    {
+      "name": "efdhg",
+      "email": "draz@gmail.com",
+      "password": "01278654604",
+      "id": 4,
+      "subjects": [
+        {
+          "subjectname": "dsa",
+          "id": "1",
+          "degree": 0
+        }
+      ]
+    },
+    {
+      "name": "dsa",
+      "email": "we@dsaaaaa",
+      "password": "555",
+      "id": 5,
+      "subjects": [
+        {
+          "subjectname": "dsa",
+          "id": "1",
+          "degree": 0
+        }
+      ]
+    }
+  ],
+  "doctor": [
+    {
+      "name": "admin",
+      "email": "ali@dsa",
+      "password": "0123",
+      "id": "1"
+    }
+  ],
+  "login": [
+    {
+      "username": "admin",
+      "role": "doctor",
+      "userid": "1",
+      "id": "1"
+    }
+  ],
+  "subject": [
+    {
+      "name": "dsa",
+      "question": [
+        {
+          "name": "dsa",
+          "question": "ewqqw",
+          "answer1": "ewqewqeq",
+          "answer2": "wqewqe",
+          "answer3": "wqewqe",
+          "answer4": "e",
+          "correctanswer": "e"
+        }
+      ],
+      "id": 1
+    },
+    {
+      "name": "math",
+      "question": [
+        {
+          "name": "math",
+          "question": "ewqe",
+          "answer1": "wqeqweewwq",
+          "answer2": "ewqe",
+          "answer3": "wqewq",
+          "answer4": "wqewq",
+          "correctanswer": "wqewq"
+        }
+      ],
+      "id": 2
+    },
+    {
+      "name": "hgftry",
+      "question": [
+        {
+          "name": "hgftry",
+          "question": "yrt",
+          "answer1": "yrt",
+          "answer2": "rtyhg",
+          "answer3": "yrtytr",
+          "answer4": "ffg",
+          "correctanswer": "ffg"
+        }
+      ],
+      "id": 3
+    }
+  ]
+}

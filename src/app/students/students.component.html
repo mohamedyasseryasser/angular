@@ -1,0 +1,27 @@
+ <!-- students.component.html -->
+ <form class="d-flex" [formGroup]="formgroup">
+  <input class="form-control me-2" type="search"  formControlName="name" placeholder="Search" aria-label="Search">
+  <button class="btn btn-outline-success" (click)="submit()" type="submit">Search</button>
+  
+</form>
+
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">number</th>
+        <th scope="col">student name</th>
+        <th scope="col">subject</th>
+        <th scope="col">degree</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr class="ss" *ngFor="let item of datatable; let i = index">
+            <th scope="row">{{ i + 1 }}</th>
+            <td>{{ item.student }}</td>
+            <td>{{ item.subject }}</td>
+            <td>{{ item.degree }}</td>
+          </tr>
+          
+    </tbody>
+  </table>
+  

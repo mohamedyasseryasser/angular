@@ -1,0 +1,106 @@
+
+<div class="new-exam">
+  <mat-horizontal-stepper linear #stepper [selectedIndex]="stepperindex">
+      <mat-step label="اسم المادة" completed="{{startadd}}">
+          <div class="AddSubject">
+              <div>اسم المادة : </div>
+              <mat-form-field   appearance="fill"  color="warn" >
+                
+                <mat-label>اسم المادة</mat-label>
+                  <input matInput type="text"  [formControl]="name" >
+              
+              
+                </mat-form-field>
+              <button color="warn"  mat-raised-button matStepperNext (click)="start()"  >ابدأ</button>
+          </div>
+
+      </mat-step>
+      <mat-step label="{{subjectname}} questions" completed="true">
+          <div class="question">
+              <form [formGroup]="questionform"> 
+                  <mat-form-field appearance="outline" color="warn" class="queiz">
+                      <mat-label>question</mat-label>
+                      <input matInput type="text" formControlName="question" >
+                  </mat-form-field>
+
+              <div class="row">
+                      <div class="col-md-6 col-sm-12">
+                      <mat-radio-button value="answer1"  (change)="getcorrectanswer($event)" color="warn"></mat-radio-button>
+                          <mat-form-field class="answer" color="warn">
+                              <mat-label>answer A</mat-label>
+                              <input matInput type="text"  formControlName="answer1">
+                          </mat-form-field>
+                      </div>
+
+                      <div class="col-md-6 col-sm-12">
+                      <mat-radio-button value="answer2"  (change)="getcorrectanswer($event)" color="warn"></mat-radio-button>
+                          <mat-form-field class="answer" color="warn">
+                              <mat-label>answer B</mat-label>
+                              <input matInput type="text"  formControlName="answer2">
+                          </mat-form-field>
+
+                      </div>
+
+                      <div class="col-md-6 col-sm-12">
+                      <mat-radio-button value="answer3"  (change)="getcorrectanswer($event)" color="warn"></mat-radio-button>
+                      <mat-form-field class="answer" color="warn">
+                              <mat-label>answer C</mat-label>
+                              <input matInput type="text"   formControlName="answer3">
+                          </mat-form-field>
+                      </div>
+
+                      <div class="col-md-6 col-sm-12">
+                          <mat-radio-button value="answer4"  (change)="getcorrectanswer($event)" color="warn"></mat-radio-button>
+                          <mat-form-field class="answer" color="warn">
+                              <mat-label>answer D</mat-label>
+                              <input matInput type="text"  formControlName="answer4">
+                          </mat-form-field>
+                      </div>
+                  </div>
+                  <div class="questBtn">
+                      <div>
+                          <button mat-raised-button class="btn btn-success" matStepperNext (click)="finsh()" >انتهاء</button>
+                          <button mat-raised-button color="warn" matStepperPrevious (click)="cansel()" >الغاء</button>
+                      </div>
+                      <div class="btns">
+                          <button mat-raised-button color="accent" (click)="cleardata()">حذف </button>
+                          <button mat-raised-button color="primary" (click)="createquestion()" >حفظ</button>
+                      </div>
+
+                  </div>
+              </form>
+          </div>
+      </mat-step>
+      <mat-step label="عرض الاختبار" completed="false">
+        <div class="examBox">
+            <div class="examhead text-center"><h2>{{subjectname}}:Test</h2></div>
+            <div class="quizBox" *ngFor="let item of question let i =index">
+                <strong><span class="text-danger">سؤال 1</span>  {{item.question}}</strong>
+                <div class="row" dir="rtl">
+                    <div class="col-sm-12">
+                        A.{{item.answer1}}
+                    </div>
+                    <div class="col-sm-12">
+                        B.{{item.answer2}}
+                    </div>
+                    <div class="col-sm-12">
+                        C. {{item.answer3}}
+                    </div>
+                    <div class="col-sm-12">
+                        D. {{item.answer4}}
+                    </div>
+                    <div class="col-sm-12">
+                        <span class="text-success">Correct Answer :{{item.correctanswer}}</span>
+                    </div>
+                </div>
+                <div class="text-right">
+                    <button mat-raised-button class="btn btn-warning" (click)="put()">تعديل</button>
+                    <button mat-raised-button  class="btn btn-danger" (click)="delet(i)">حذف</button>
+                </div>
+                <hr>
+            </div>
+        </div>
+    </mat-step>
+</mat-horizontal-stepper>
+</div>
+ 

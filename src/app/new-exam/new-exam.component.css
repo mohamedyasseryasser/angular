@@ -1,0 +1,32 @@
+.question{
+padding: 20px;
+
+margin-top: 80px;
+}
+mat-horizontal-stepper{
+    padding-top: 60px;
+}
+.AddSubject{
+margin-top: 50px;
+}
+.queiz{
+    width: 85%;
+    position: relative;
+    left: 43%;
+    transform: translateX(-50%);
+    margin-bottom: 40px;
+}
+.answer{
+    width: 65%;
+
+}
+.questBtn{
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+}
+.questBtn button{
+    margin-left: 5px;
+}
+ 
+ 

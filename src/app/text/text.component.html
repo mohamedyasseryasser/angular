@@ -1,0 +1,33 @@
+<div class="examBox">
+  <div class="examhead text-center"><h2>{{subjectname}}</h2></div>
+  <div class="quizBox" *ngFor="let item of subjects?.question let i = index" >
+      <strong ><span  class="text-danger"> question: {{i + 1}}</span> {{item.question}}</strong>
+      <div class="row mt-3" >
+          <div class="col-md-6 col-sm-12">
+              <mat-radio-button value="{{item.answer1}}" name="{{i}}" (click)="getvalue($event,i)" *ngIf="role =='students' && results == false"  color="warn"></mat-radio-button>
+              <label><span *ngIf="role == 'doctor'" >A</span>: {{item.answer1}}</label>
+          </div>
+
+          <div class="col-md-6 col-sm-12">
+              <mat-radio-button value="{{item.answer2}}" name="{{i}}" (click)="getvalue($event,i)" *ngIf="role =='students' && results == false" color="warn"></mat-radio-button>
+              <label><span *ngIf="role == 'doctor'" >B</span>: {{item.answer2}}</label>
+          </div>
+
+          <div class="col-md-6 col-sm-12">
+              <mat-radio-button value="{{item.answer3}}" name="{{i}}" (click)="getvalue($event,i)" *ngIf="role =='students' && results == false" color="warn"></mat-radio-button>
+              <label><span *ngIf="role == 'doctor'" >C</span>: {{item.answer3}}</label>
+          </div>
+
+          <div class="col-md-6 col-sm-12">
+              <mat-radio-button value="{{item.answer4}}" name="{{i}}" (click)="getvalue($event,i)"  *ngIf="role =='students' && results == false" color="warn"></mat-radio-button>
+              <label><span *ngIf="role == 'doctor'" >D</span>: {{item.answer4}}</label>
+          </div>
+          <div class="delete" *ngIf="role == 'doctor'" ><button (click)="delet(i)" class="btn btn-danger">delete</button></div>
+      </div>
+      <hr>
+  </div>
+  <div class="text-center">
+    <span class="fs-4 text-success" *ngIf="results == true">{{total}} / {{subjects?.question.length}}</span>
+      <button *ngIf="role == 'students' && results == false" (click)="result()" class="btn btn-success px-5 fs-5"> Result </button>
+  </div>
+</div>
