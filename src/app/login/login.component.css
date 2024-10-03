@@ -13,9 +13,11 @@
    }
   h2{
     background-color: red;
+font-weight: bold;
     width: 300px;
     border-radius: 30px;
     display: inline-block;
+    color: white;
   }
  .mat-radio-group{
  display: flex;
@@ -33,4 +35,42 @@ width: 100%;
 }  
 .primary{
     text-decoration: none;
+} 
+@media(max-width:768px){
+.login{
+    width: 100%;
+    padding: 10px;
+    position: relative;
+    top: 25px;
+}
+h2{
+    width: 90%;
+    padding: 5px;
+    font-weight: bold;
+    color: white;
+}
+.mat-radio-group{
+    width: 100%;
+    height: 50px;
+    position: relative;
+}
+mat-radio-group{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 30px;
+}
+mat-radio-button{
+margin-left: 0;
+text-align: center;
+}
+}
+@media(max-width:981px){
+    .login{
+        width: 100%;
+    }
 }

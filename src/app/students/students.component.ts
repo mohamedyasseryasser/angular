@@ -15,6 +15,11 @@ export class StudentsComponent implements OnInit{
  name:any
  array:any
  filteration:any={name:''}
+ timeout:any
+page:any=1
+index:any
+limit:number=5
+
   constructor(private fb:FormBuilder ,private subjectservice:SubjectsService ,private studentsservice:StudentsService){
   }
   ngOnInit(): void {
@@ -22,7 +27,7 @@ export class StudentsComponent implements OnInit{
       name: new FormControl('',Validators.required),
       subject:new FormControl('',Validators.required)
     })
-    
+    console.log(this.page)
      this.getstudents()
   }
 getstudents(){
@@ -58,6 +63,9 @@ this.array = this.datatable.filter((ele:any)=>{
 this.datatable = this.array
 console.log(this.array)
 }
- 
+changepage(event:any){
+  this.page = event
+  console.log(this.page)
+}
 }
  

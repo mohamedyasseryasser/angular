@@ -1,17 +1,17 @@
 
 <div class="new-exam">
   <mat-horizontal-stepper linear #stepper [selectedIndex]="stepperindex">
-      <mat-step label="اسم المادة" completed="{{startadd}}">
+      <mat-step label="subjectname" completed="{{startadd}}">
           <div class="AddSubject">
-              <div>اسم المادة : </div>
+              <div>subject</div>
               <mat-form-field   appearance="fill"  color="warn" >
                 
-                <mat-label>اسم المادة</mat-label>
+                <mat-label>subject</mat-label>
                   <input matInput type="text"  [formControl]="name" >
               
               
                 </mat-form-field>
-              <button color="warn"  mat-raised-button matStepperNext (click)="start()"  >ابدأ</button>
+              <button color="warn"  mat-raised-button matStepperNext (click)="start()"  >start</button>
           </div>
 
       </mat-step>
@@ -71,11 +71,11 @@
               </form>
           </div>
       </mat-step>
-      <mat-step label="عرض الاختبار" completed="false">
+      <mat-step label="show test" completed="false">
         <div class="examBox">
             <div class="examhead text-center"><h2>{{subjectname}}:Test</h2></div>
             <div class="quizBox" *ngFor="let item of question let i =index">
-                <strong><span class="text-danger">سؤال 1</span>  {{item.question}}</strong>
+                <strong><span class="text-danger">question:{{i + 1}}</span>  {{item.question}}</strong>
                 <div class="row" dir="rtl">
                     <div class="col-sm-12">
                         A.{{item.answer1}}
@@ -83,7 +83,7 @@
                     <div class="col-sm-12">
                         B.{{item.answer2}}
                     </div>
-                    <div class="col-sm-12">
+                    <div class="col-sm-12"> 
                         C. {{item.answer3}}
                     </div>
                     <div class="col-sm-12">

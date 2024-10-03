@@ -1,0 +1,14 @@
+.student{
+    padding: 50px 0;
+}
+form{
+    width: 300px;
+}
+thead{
+    background-color: #7a36f4;
+    color: white;
+}
+table{
+    box-shadow: 0px 0px 20px #ddd;
+    margin-top: 20px;
+}

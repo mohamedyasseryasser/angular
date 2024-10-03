@@ -29,11 +29,11 @@ this.services.getsubjects().subscribe((res:any) => {
   this.subject = res;
 }); 
 }  
-delet(index:any){
+delet(index:any,id:any){
 console.log(index)
-this.subject.splice(index - 1  ,1)
-
-this.examservices.deletdata(index).subscribe((res:any)=>{
+this.subject.splice(index  ,1)
+console.log(this.subject)
+this.examservices.deletdata(id).subscribe((res:any)=>{
   console.log(this.subject)
 })
 
@@ -65,3 +65,4 @@ console.log(index)
 this.router.navigate(['/text',index])
 }
 }
+ 

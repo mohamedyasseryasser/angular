@@ -4,12 +4,12 @@
           <div class="namesubject">
               <div>{{item.name}}</div>
           </div>
-          <div class="subBtn">
-           <button  (click)="delet(item.id)" *ngIf="user == 'doctor'" mat-raised-button color="warn"  class="mx-1" >delete</button>
+          <div class="subBtn py-2">
+           <button  (click)="delet(i,item.id)" *ngIf="user == 'doctor'" mat-raised-button color="warn"  class="mx-1" >delete</button>
            <button   (click)="showwithdoctor(item.id)" value="item.id"  *ngIf="user == 'doctor'" mat-raised-button color="primary"  class="mx-1">show</button>
            <button (click)="show(item.id)" value="item.id"  *ngIf="user == 'students'"  class="btn btn-success">start exam</button>
           </div>
       </div>
 </div>
 </div>
-     
+       

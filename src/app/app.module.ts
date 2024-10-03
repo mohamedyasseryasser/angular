@@ -25,6 +25,8 @@ import { NewExamComponent } from './new-exam/new-exam.component';
 import { TextComponent } from './text/text.component';
 import { StudentsComponent } from './students/students.component';
 import { MatTableModule } from '@angular/material/table';
+import { MatPaginator } from '@angular/material/paginator';
+import { NgxPaginationModule } from 'ngx-pagination';
 
 
 @NgModule({
@@ -56,7 +58,12 @@ import { MatTableModule } from '@angular/material/table';
     MatRadioModule,
     MatStepperModule,
     BrowserModule,
+    MatPaginator,
+    NgxPaginationModule,
     ToastrModule.forRoot()
+  ],
+  exports:[ 
+    NgxPaginationModule
   ],
   providers: [
   provideClientHydration()

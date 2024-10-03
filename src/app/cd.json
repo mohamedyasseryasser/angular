@@ -1,62 +1,88 @@
 {
   "students": [
     {
-      "name": "wqe",
-      "email": "ali@dsaa",
-      "password": "444",
+      "name": "mohamed",
+      "email": "ali@ds",
+      "password": "999",
       "id": 1,
       "subjects": [
         {
-          "subjectname": "dsa",
+          "subjectname": "math",
           "id": "1",
-          "degree": 0
+          "degree": 1
         }
       ]
     },
     {
-      "name": "eqwesda",
-      "email": "ali@dsaasd",
-      "password": "1234",
+      "name": "ahmed",
+      "email": "ali@dsaa",
+      "password": "444",
       "id": 2,
       "subjects": [
         {
-          "subjectname": "dsa",
-          "id": "1",
+          "subjectname": "english",
+          "id": "2",
+          "degree": 1
+        },
+        {
+          "subjectname": "arabic",
+          "id": "3",
           "degree": 0
         }
       ]
     },
     {
-      "name": "eqwesda",
+      "name": "ali",
       "email": "ali@dsaasd",
       "password": "1234",
       "id": 3
     },
     {
-      "name": "efdhg",
+      "name": "samir",
       "email": "draz@gmail.com",
       "password": "01278654604",
       "id": 4,
       "subjects": [
         {
-          "subjectname": "dsa",
+          "subjectname": "english",
+          "id": "2",
+          "degree": 0
+        },
+        {
+          "subjectname": "math",
           "id": "1",
+          "degree": 1
+        },
+        {
+          "subjectname": "arabic",
+          "id": "3",
           "degree": 0
         }
       ]
     },
     {
-      "name": "dsa",
+      "name": "omar",
+      "email": "sad@sad",
+      "password": "111",
+      "id": 5
+    },
+    {
+      "name": "abdo",
+      "email": "sda@wq",
+      "password": "888",
+      "id": 6
+    },
+    {
+      "name": "islam",
+      "email": "we@dsa",
+      "password": "444",
+      "id": 7
+    },
+    {
+      "name": "marwan",
       "email": "we@dsaaaaa",
       "password": "555",
-      "id": 5,
-      "subjects": [
-        {
-          "subjectname": "dsa",
-          "id": "1",
-          "degree": 0
-        }
-      ]
+      "id": 8
     }
   ],
   "doctor": [
@@ -77,46 +103,154 @@
   ],
   "subject": [
     {
-      "name": "dsa",
+      "name": "math",
       "question": [
         {
-          "name": "dsa",
-          "question": "ewqqw",
-          "answer1": "ewqewqeq",
-          "answer2": "wqewqe",
-          "answer3": "wqewqe",
-          "answer4": "e",
-          "correctanswer": "e"
+          "name": "math",
+          "question": " 1 * 1",
+          "answer1": "1",
+          "answer2": "3",
+          "answer3": "2",
+          "answer4": "4",
+          "correctanswer": "1"
+        },
+        {
+          "name": "math",
+          "question": "2*2 +4",
+          "answer1": "4",
+          "answer2": "6",
+          "answer3": "5",
+          "answer4": "8",
+          "correctanswer": "8"
+        },
+        {
+          "name": "math",
+          "question": "5*5",
+          "answer1": "25",
+          "answer2": "6",
+          "answer3": "4",
+          "answer4": "7",
+          "correctanswer": "25"
+        },
+        {
+          "name": "math",
+          "question": "5/5*6",
+          "answer1": "6",
+          "answer2": "5",
+          "answer3": "47",
+          "answer4": "4",
+          "correctanswer": "6"
+        },
+        {
+          "name": "math",
+          "question": "1+2-5*4",
+          "answer1": "177",
+          "answer2": "4",
+          "answer3": "17",
+          "answer4": "5",
+          "correctanswer": "17"
         }
       ],
       "id": 1
     },
     {
-      "name": "math",
+      "name": "english",
       "question": [
         {
-          "name": "math",
-          "question": "ewqe",
-          "answer1": "wqeqweewwq",
-          "answer2": "ewqe",
-          "answer3": "wqewq",
-          "answer4": "wqewq",
-          "correctanswer": "wqewq"
+          "name": "english",
+          "question": "ewqewq",
+          "answer1": "ewqewq",
+          "answer2": "d",
+          "answer3": "dsa",
+          "answer4": "weewq",
+          "correctanswer": "weewq"
+        },
+        {
+          "name": "english",
+          "question": "qwewq",
+          "answer1": "erwe",
+          "answer2": "rew",
+          "answer3": "rq",
+          "answer4": "ewr",
+          "correctanswer": "erwe"
+        },
+        {
+          "name": "english",
+          "question": "rw",
+          "answer1": "tet",
+          "answer2": "te",
+          "answer3": "456345",
+          "answer4": "fgdgs",
+          "correctanswer": "tet"
+        },
+        {
+          "name": "english",
+          "question": "tre",
+          "answer1": "rweq",
+          "answer2": "weqqwr",
+          "answer3": "rwqew",
+          "answer4": "rewwer",
+          "correctanswer": "weqqwr"
+        },
+        {
+          "name": "english",
+          "question": null,
+          "answer1": null,
+          "answer2": null,
+          "answer3": null,
+          "answer4": null,
+          "correctanswer": null
+        },
+        {
+          "name": "english",
+          "question": "oiuy",
+          "answer1": "ui",
+          "answer2": "k",
+          "answer3": "iukllh",
+          "answer4": "lhjkljkl",
+          "correctanswer": "iukllh"
         }
       ],
       "id": 2
     },
     {
-      "name": "hgftry",
+      "name": "arabic",
       "question": [
         {
-          "name": "hgftry",
-          "question": "yrt",
-          "answer1": "yrt",
-          "answer2": "rtyhg",
-          "answer3": "yrtytr",
-          "answer4": "ffg",
-          "correctanswer": "ffg"
+          "name": "arabic",
+          "question": "ewqrewrqwe",
+          "answer1": "rewr",
+          "answer2": "ter",
+          "answer3": "tretwewr",
+          "answer4": "tewrtwert",
+          "correctanswer": "ter"
+        },
+        {
+          "name": "arabic",
+          "question": "eqwe",
+          "answer1": "rwet",
+          "answer2": "t",
+          "answer3": "ytru",
+          "answer4": "urytutyuyt",
+          "correctanswer": "rwet"
+        },
+        {
+          "name": "arabic",
+          "question": "hjg",
+          "answer1": "hdhfdg",
+          "answer2": "ytiuy",
+          "answer3": "gf",
+          "answer4": "tiyui",
+          "correctanswer": "gf"
+        },
+        {
+          "name": "arabic",
+          "question": "op'/p[[p",
+          "answer1": "p[",
+          "answer2": "p[\\'o[",
+          "answer3": "]po'p['",
+          "answer4": "[o\\",
+          "correctanswer": "[o\\"
         }
       ],
       "id": 3
